@@ -1,19 +1,34 @@
+console.log("Customer Records Tracker");
+
 let customers = [
     { 
-        name: "rj", 
-        email: "rj@gmail.com",
+        name: "Rj", 
+        email: "Rj@gmail.com",
         purchase: ["apple", "banana"] 
     },
     {   
-        name: "aiden", 
-        email: "aiden@gmail.com",
+        name: "Aiden", 
+        email: "Aiden@gmail.com",
         purchase: ["pencil", "water"] 
     },
     { 
-        name: "alex", 
-        email: "alex@gmail.com",
+        name: "Alex", 
+        email: "Alex@gmail.com",
         purchase: ["couch", "pillow"]
 
     },
 
 ];
+
+customers.push({
+    name: "Ethan",
+    email: "Ethan@gmail.com",
+    purchase: ["container", "peanut"]
+
+    
+});
+
+customers.shift();
+
+console.log(customers);
+
