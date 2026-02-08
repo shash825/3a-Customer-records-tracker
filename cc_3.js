@@ -1,20 +1,18 @@
-console.log("Customer Records Tracker");
-
 let customers = [
     { 
         name: "Rj", 
         email: "Rj@gmail.com",
-        purchase: ["apple", "banana"] 
+        purchases: ["apple", "banana"] 
     },
     {   
         name: "Aiden", 
         email: "Aiden@gmail.com",
-        purchase: ["pencil", "water"] 
+        purchases: ["pencil", "water"] 
     },
     { 
         name: "Alex", 
         email: "Alex@gmail.com",
-        purchase: ["couch", "pillow"]
+        purchases: ["couch", "pillow"]
 
     },
 
@@ -23,12 +21,20 @@ let customers = [
 customers.push({
     name: "Ethan",
     email: "Ethan@gmail.com",
-    purchase: ["container", "peanut"]
+    purchases: ["container", "peanut"]
 
     
 });
 
 customers.shift();
 
+customers[0].email = "Aiden10@gmail.com";
+
+customers[1].purchases.push("blanket");
+
 console.log(customers);
+
+customers.forEach(customer => {
+    console.log(`${customer.name} || ${customer.email} || Number of purchases: ${customer.purchases.length}`);
+});
 
